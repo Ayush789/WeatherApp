@@ -1,16 +1,8 @@
-# weather_app
+# Weather_app
+Inspired By ***Moataz Mustapha*** https://www.uplabs.com/posts/weather-a29b437d-6f2d-46cb-8b4c-09f798627d73
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-19-49-128_com.example.weather_app.png" width="200px"/><img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-19-55-097_com.example.weather_app.png" width="200px"/>
+<img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-20-02-042_com.example.weather_app.png" width="200px"/>
+<img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-20-09-101_com.example.weather_app.png" width="200px"/>
+<img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-20-16-164_com.example.weather_app.png" width="200px"/>
+<img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-22-40-173_com.example.weather_app.png" width="200px"/>
