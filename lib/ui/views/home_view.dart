@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/core/viewmodel/home_view_model.dart';
+import 'package:weather_app/ui/shared/timeofday.dart';
 
 import 'base_view.dart';
 
@@ -54,7 +55,7 @@ class _HomeViewState extends State<HomeView>
             fit: StackFit.expand,
             children: <Widget>[
               Image.asset(
-                'assets/w1.png',
+                Wallpaper(),
                 fit: BoxFit.cover,
               ),
               Column(
@@ -107,6 +108,7 @@ class _HomeViewState extends State<HomeView>
                               style: TextStyle(
                                 fontSize: 22.0,
                                 fontWeight: FontWeight.bold,
+                                color: textColor()
                               )),
                         ),
                         Padding(
@@ -115,6 +117,7 @@ class _HomeViewState extends State<HomeView>
                           child: Text("Current Location",
                               style: TextStyle(
                                 fontSize: 16.0,
+                                color: textColor()
                               )),
                         ),
                         Row(
@@ -128,20 +131,24 @@ class _HomeViewState extends State<HomeView>
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.end,
                                     children: <Widget>[
-                                      Text("DAY"),
-                                      Text("NIGHT"),
+                                      Text("DAY",
+                                        style: TextStyle(color: textColor()),),
+                                      Text("NIGHT",
+                                        style: TextStyle(color: textColor()),),
                                     ],
                                   ),
                                   Column(
                                     children: <Widget>[
-                                      Icon(Icons.keyboard_arrow_up),
-                                      Icon(Icons.keyboard_arrow_down),
+                                      Icon(Icons.keyboard_arrow_up,color: textColor(),),
+                                      Icon(Icons.keyboard_arrow_down,color: textColor(),),
                                     ],
                                   ),
                                   Column(
                                     children: <Widget>[
-                                      Text("42"),
-                                      Text("52"),
+                                      Text("42",
+                                        style: TextStyle(color: textColor()),),
+                                      Text("52",
+                                        style: TextStyle(color: textColor()),),
                                     ],
                                   ),
                                 ],
@@ -154,6 +161,7 @@ class _HomeViewState extends State<HomeView>
                                     Icon(
                                       Icons.cloud_queue,
                                       size: 60.0,
+                                      color: textColor(),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.only(
@@ -166,6 +174,7 @@ class _HomeViewState extends State<HomeView>
                                               style: TextStyle(
                                                 fontSize: 60.0,
                                                 fontWeight: FontWeight.bold,
+                                                color: textColor()
                                               )),
                                           Padding(
                                             padding:
@@ -173,6 +182,7 @@ class _HomeViewState extends State<HomeView>
                                             child: Text("\u00b0C",
                                                 style: TextStyle(
                                                   fontSize: 35.0,
+                                                  color: textColor()
                                                 )),
                                           ),
                                         ],
@@ -185,6 +195,7 @@ class _HomeViewState extends State<HomeView>
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: 16.0,
+                                      color: textColor()
                                     )),
                               ],
                             ),
@@ -267,7 +278,7 @@ class _HomeViewState extends State<HomeView>
                                             topRight:
                                                 const Radius.circular(10.0),
                                           ),
-                                          color: Color(0xfff0ffd6),
+                                          color: baseColor(),
                                         ),
                                         height: _MIDDLE_PILL_HEIGHT * 0.8 * 0.7,
                                         width: _MIDDLE_PILL_HEIGHT / 2,
@@ -280,7 +291,7 @@ class _HomeViewState extends State<HomeView>
                                             bottomRight:
                                                 const Radius.circular(10.0),
                                           ),
-                                          color: Color(0xffffd800),
+                                          color: mainColor(),
                                         ),
                                         height: _MIDDLE_PILL_HEIGHT * 0.8 * 0.3,
                                         width: _MIDDLE_PILL_HEIGHT / 2,
@@ -357,15 +368,18 @@ class _HomeViewState extends State<HomeView>
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: <Widget>[
                             FloatingActionButton(
-                              child: Icon(_isPanelVisible
-                                  ? Icons.keyboard_arrow_down
-                                  : Icons.keyboard_arrow_up),
+                              child: Icon(
+                                _isPanelVisible
+                                    ? Icons.keyboard_arrow_down
+                                    : Icons.keyboard_arrow_up,
+                                color: secondaryColor(),
+                              ),
                               mini: true,
                               onPressed: () {
                                 _controller.fling(
                                     velocity: _isPanelVisible ? -1.0 : 1.0);
                               },
-                              backgroundColor: Color(0xFFFFD800),
+                              backgroundColor: mainColor(),
                             )
                           ],
                         )
@@ -375,8 +389,14 @@ class _HomeViewState extends State<HomeView>
                   Expanded(
                     child: ListView(
                       children: <Widget>[
-                        Center(child: Text("Today Junbe 4 19")),
-                        Center(child: Text("Current Location")),
+                        Center(
+                          child: Text(
+                            "Today Junbe 4 19",
+                            style: TextStyle(color: textColor()),
+                          ),
+                        ),
+                        Center(child: Text("Current Location",
+                          style: TextStyle(color: textColor()),)),
                         Center(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -384,6 +404,7 @@ class _HomeViewState extends State<HomeView>
                               Icon(
                                 Icons.cloud_queue,
                                 size: 60.0,
+                                color: textColor(),
                               ),
                               Padding(
                                 padding:
@@ -395,12 +416,14 @@ class _HomeViewState extends State<HomeView>
                                         style: TextStyle(
                                           fontSize: 60.0,
                                           fontWeight: FontWeight.bold,
+                                          color: textColor()
                                         )),
                                     Padding(
                                       padding: const EdgeInsets.only(top: 8.0),
                                       child: Text("\u00b0C",
                                           style: TextStyle(
                                             fontSize: 35.0,
+                                            color: textColor()
                                           )),
                                     ),
                                   ],
