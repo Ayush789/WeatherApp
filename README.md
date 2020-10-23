@@ -1,6 +1,14 @@
 # Weather_app
-Inspired By ***Moataz Mustapha*** https://www.uplabs.com/posts/weather-a29b437d-6f2d-46cb-8b4c-09f798627d73
+Mobile Application built in Flutter
 
-<img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-19-49-128_com.example.weather_app.png" width="33%"/><img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-19-55-097_com.example.weather_app.png" width="33%"/><img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-20-02-042_com.example.weather_app.png" width="33%"/>
+>Inspired By ***Moataz Mustapha*** https://www.uplabs.com/posts/weather-a29b437d-6f2d-46cb-8b4c-09f798627d73
 
-<img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-20-09-101_com.example.weather_app.png" width="33%"/><img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-20-16-164_com.example.weather_app.png" width="33%"/><img src="https://github.com/Ayush789/WeatherApp/blob/master/sceenshots/Screenshot_2019-06-09-00-22-40-173_com.example.weather_app.png" width="33%"/>
+<img src="sceenshots/1.png" width="32%"/><img src="sceenshots/2.png" width="32%"/><img src="sceenshots/3.png" width="32%"/>
+
+<img src="sceenshots/4.png" width="32%"/><img src="sceenshots/5.png" width="32%"/><img src="sceenshots/6.png" width="32%"/>
+
+## Steps to reproduce
+
+**Step 1:** Install Flutter using latest official guide https://flutter.dev/docs/get-started/install
+
+**Step 2:** Run application using `flutter run`
